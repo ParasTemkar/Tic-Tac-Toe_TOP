@@ -1,8 +1,31 @@
+h1{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
 .tile{
     width: 100px;
     height: 100px;
-    background-color:antiquewhite;
-    margin: 10px;
+    background-color: white;
 }
 
-/* Add background art ti tiles */
+#display{
+    background-color: black;
+    width: 320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cross{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ca/Transparent_X.png');
+    background-size: cover;
+}
+.circle{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f5/Circle_file.487.png');
+    background-size: cover;
+}

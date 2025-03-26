@@ -14,13 +14,12 @@ const  displayboard = (function (){
         
         tile.addEventListener("click",()=>{
             if (!tile.textContent) { 
-                tile.textContent = player; 
                 if (player === player_1) {
-                    tile.innerHTML===player_1;
-                    player = player_2;  
+                    player = player_2; 
+                    tile.classList.add("cross"); 
                 } else {
-                    tile.innerHTML===player_2;
-                    player = player_1;  
+                    player = player_1;
+                    tile.classList.add("circle");  
                 }
             } else {
                 alert("Already taken");
