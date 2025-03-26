@@ -6,9 +6,9 @@ The game allows two players to take turns and play on a 3x3 grid.
 
 ## Features
 - Two-player mode.
-- Add a reset button to restart the game.
 
 ## Planned Feature
+- Add a reset button to restart the game.
 - Add AI opponent for single-player mode.
 - Improve UI and animations.
 - Modular JavaScript structure using factory functions or module pattern.
