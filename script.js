@@ -1,6 +1,8 @@
 
+X_squares = [];
+O_squares = [];
 
-function displayboard(){
+const  displayboard = (function (){
     const display = document.getElementById("display");
     display.innerHTML = "";
   
@@ -9,13 +11,26 @@ function displayboard(){
         let tile = document.createElement("div");
         tile.classList.add("tile");
         tile.setAttribute('id', square)
-
+        
         display.appendChild(tile);
+        
+        tile.addEventListener("click",()=>{
+            if(tile.innerHTML==""){
+                if(player===player_1){
+                    X_squares.push(square)
+                }
+                if(player===player_2){
+                    O_squares.push(square)
+                }
+            }
+            else{
+                alert("already taken");
+            }
+
+        });
     }));
-};
+}) () ;
 
 
-  window.onload = displayboard;
-  
 
   
