@@ -1,6 +1,6 @@
-
-X_squares = [];
-O_squares = [];
+let player_1 = "X";  
+let player_2 = "O";
+let player = player_1;
 
 const  displayboard = (function (){
     const display = document.getElementById("display");
@@ -12,22 +12,21 @@ const  displayboard = (function (){
         tile.classList.add("tile");
         tile.setAttribute('id', square)
         
-        display.appendChild(tile);
-        
         tile.addEventListener("click",()=>{
-            if(tile.innerHTML==""){
-                if(player===player_1){
-                    X_squares.push(square)
+            if (!tile.textContent) { 
+                tile.textContent = player; 
+                if (player === player_1) {
+                    tile.innerHTML===player_1;
+                    player = player_2;  
+                } else {
+                    tile.innerHTML===player_2;
+                    player = player_1;  
                 }
-                if(player===player_2){
-                    O_squares.push(square)
-                }
+            } else {
+                alert("Already taken");
             }
-            else{
-                alert("already taken");
-            }
-
         });
+        display.appendChild(tile);
     }));
 }) () ;
 
