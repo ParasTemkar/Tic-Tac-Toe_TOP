@@ -14,9 +14,9 @@ The game allows two players to take turns and play on a 3x3 grid.
 - Modular JavaScript structure using factory functions or module pattern.
 
 ## Tech Stack
-HTML
-CSS (Flexbox/Grid for layout)
-JavaScript
+- HTML
+-CSS (Flexbox/Grid for layout)
+- JavaScript
 
 ## How to Run
 
@@ -25,13 +25,14 @@ JavaScript
 2. Open index.html in a browser.
 3. Play by clicking on the grid!
 
-File Structure
+## File Structure
 
 📂 tic-tac-toe/
- ├── 📄 index.html      # Main HTML file
- ├── 🎨 style.css       # Styling
- ├── ⚡ script.js       # Game logic
- ├── 📄 README.md       # Project documentation
+- 📄 index.html      # Main HTML file
+- 🎨 style.css       # Styling
+- ⚡ script.js       # Game logic
+- 📄 README.md       # Project documentation
 
 ## License
 This project is for learning purposes under The Odin Project curriculum.
+
